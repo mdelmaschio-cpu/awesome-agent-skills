@@ -44,6 +44,17 @@ Rules enforced during review:
 | **No absolute paths** | Never hard-code machine-specific paths. Use relative paths or `$HOME`/`$PROJECT_ROOT`. |
 | **Scoped tools** | Declare only the tools the skill actually needs. Avoid `"tools": ["*"]`. |
 
+## AI Assistant Guidance
+
+When working in this repository:
+- **Do not add skill entries** for repos without demonstrated community usage — the list requires real-world adoption, not brand-new skills
+- **PR title must be** `Add skill: author/skill-name` (no other format accepted)
+- **One entry per PR** — batch submissions are rejected
+- **Check for duplicates** before adding: search the README; similar skills may already be listed under a different name
+- **Description must be 10 words or fewer** — anything longer will be flagged during review
+- **No promotional language** — descriptions are factual ("Runs PostgreSQL migrations"), not marketing ("The best migration tool")
+- **Pure Markdown repo**: do not introduce scripts, configs, or build tooling
+
 ## Skill Paths by Tool
 
 Skills are installed in tool-specific directories. For reference:
